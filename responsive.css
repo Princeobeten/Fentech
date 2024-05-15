@@ -1,0 +1,138 @@
+/* Tablet Styles */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Header and Navigation */
+    header {
+        padding: 20px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    nav {
+       padding: 10px;
+    }
+
+    .learn-btn, .get-started-btn {
+        margin-left: 10px;
+        font-size: 11px;
+    }
+
+    nav li {
+        font-size: 13px;
+    }
+
+    /* Main Content */
+    .center-content {
+        padding: 40px;
+    }
+
+    .main-heading {
+        font-size: 32px;
+    }
+
+    #sub-heading {
+        font-size: 16px;
+    }
+
+    .features {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .feature {
+        max-width: 300px;
+        padding: 30px;
+        text-align: left;
+    }
+
+    .feature img {
+        max-width: 40px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+   /* Sidebar Menu */
+   .sidebar {
+    width: 300px;
+    }
+
+    .sidebar-buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .sidebar-buttons .learn-btn,
+    .sidebar-buttons #dark-mode-toggle {
+        margin: 0 10px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+   
+}
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 1025px) {
+    /* Header and Navigation */
+    header {
+        padding: 30px;
+    }
+
+    .logo {
+        width: 250px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .button-container {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    /* Main Content */
+    .center-content {
+        padding: 60px;
+    }
+
+    .main-heading {
+        font-size: 48px;
+    }
+
+    #sub-heading {
+        font-size: 24px;
+    }
+
+    .features {
+        flex-direction: row;
+        gap: 60px;
+    }
+
+    .feature {
+        max-width: 350px;
+        padding: 40px;
+    }
+
+    .feature img {
+        max-width: 60px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 30px;
+    }
+
+    /* Sidebar Menu */
+    .sidebar {
+        width: 350px;
+    }
+}

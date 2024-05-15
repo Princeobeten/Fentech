@@ -1,0 +1,240 @@
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+    /* Header and Navigation */
+    header {
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .logo {
+        width: 150px;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .button-container {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    /* Main Content */
+    .center-content {
+        padding: 20px;
+    }
+
+    .main-heading {
+        font-size: 30px;
+        padding: 0px;
+        padding-bottom: 5px;
+        text-align: center;;
+    }
+
+    .main-heading::before,
+    .main-heading::after {
+        content: icon;
+    }
+
+    #sub-heading {
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .feature {
+        max-width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .feature img {
+        max-width: 30px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 10px;
+    }
+
+    /* Hamburger Menu */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #14027C;
+        margin-bottom: 5px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul.show {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    /* Sidebar Menu */
+    .sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        background: linear-gradient(to bottom right, #ffffff, #d9d9d9);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        padding-top: 30px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 999;
+    }
+
+    /* Styles for logo inside sidebar */
+    .sidebar .logo {
+        width: 150px;
+        margin-bottom: 20px;
+    }
+
+    .sidebar.show {
+        transform: translateX(0);
+    }
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sidebar a {
+        text-decoration: none;
+        color: #14027C;
+        font-weight: bold;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .sidebar a::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #ff3409;
+        transition: transform 0.3s ease;
+        transform: scaleX(0);
+    }
+    
+    .sidebar a:hover::after {
+        transform: scaleX(1);
+    }
+
+    .sidebar li {
+        margin-bottom: 15px;
+    }
+
+    .sidebar .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+        color: #14027C;
+        cursor: pointer;
+    }
+
+    nav .button-container,
+    nav #nav-menu {
+        display: none;
+    }
+
+    /* dark mode style for sidbar */
+    body.dark-mode .sidebar {
+        background: linear-gradient(to bottom right, #333333, #222222);
+    }
+
+    body.dark-mod .sidebar a {
+        color: #ff3409;
+    }
+
+    body.dark-mode .sidebar a,
+    body.dark-mode .sidebar .close-btn {
+        color: #ffffff;
+    }
+    
+    body.dark-mod .sidebar ul {
+        color: white;
+    }
+
+    /* Styles for buttons inside sidebar */
+    .sidebar #dark-mode-toggle {
+        color: #ffffff;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        margin-bottom: 10px;
+    }
+
+    body.dark-mode .hamburger span {
+        background-color: white;
+    }
+
+    /* About Section */
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-text {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    /* Facilitators Section */
+    .facilitator-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Staff Section */
+    .staff-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Programs Section */
+    .program-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contact Section */
+    .contact-container {
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact-info {
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+}

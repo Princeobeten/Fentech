@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FENTECH</title>
+    <link rel="icon" href="img/fentech_tittle_logo.png" type="image/png">
+
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/9e0c1972f9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/fentech_horizontal_logo.png" alt="FENTECH Logo" class="logo">
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="nav-menu">
+                <li><a href="#center-content">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="button-container">
+                <button class="learn-btn">Learn with us Today</button>
+                <button id="dark-mode-toggle" onclick="toggleDarkMode()"><i class="fas fa-moon"></i></button>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="sidebar" id="sidebar-menu">
+        <span class="close-btn" onclick="toggleMenu()">&times;</span>
+        <img src="img/fentech_horizontal_logo.png" alt="FENTECH Logo" class="logo">
+        <ul>
+            <li><a href="#center-content">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="button-container">
+            <button class="learn-btn">Learn with us Today</button>
+            <button id="dark-mode-toggle" onclick="toggleDarkMode()"><i class="fas fa-moon"></i></button>
+        </div>
+    </div>
+
+    <main class="center-content">
+        <h1 class="main-heading">Empowering the Next Generation in STEM</h1>
+        <p id="sub-heading">Join FENTECH's free STEM trainings for girls and boys.</p>
+        <button class="get-started-btn">Get Started</button>
+
+        <div class="features">
+            <div class="feature">
+                <img src="img/Vector-1.png" alt="Curriculum Icon">
+                <h3>Innovative Curriculum</h3>
+                <p>Our courses are designed to inspire and engage students in the joys of programming and technology.</p>
+            </div>
+            <div class="feature">
+                <img src="img/Vector-2.png" alt="Skills Icon">
+                <h3>Practical Skills</h3>
+                <p>Hands-on projects and real-world applications to build practical and relevant skills.</p>
+            </div>
+            <div class="feature">
+                <img src="img/Vector-0.png" alt="Community Icon">
+                <h3>Community Building</h3>
+                <p>A supportive community for students to grow their network and share their passion for STEM.</p>
+            </div>
+        </div>
+    </main>
+
+    <div style=" box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); border-radius: 5px;">
+        <section id="about">
+            <h2 class="main-heading">About FENTECH</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>At FENTECH, we are dedicated to empowering the next generation of innovators and problem-solvers through immersive STEM education. Our mission is to inspire young minds to explore the wonders of technology and equip them with the skills necessary to thrive in the rapidly evolving digital landscape.</p>
+                </div>
+                <div class="about-image">
+                    <img src="img/technology-entertainment-gaming-cyberspace-people-concept-serious-dark-skinned-player-wearing-checkered-shirt-big-modern-3-d-glasses.png" alt="About FENTECH">
+                </div>
+            </div>
+        </section>
+        
+        <section id="facilitators">
+            <h2 class="main-heading">Our Facilitators</h2>
+            <div class="facilitator-grid">
+                <div class="facilitator">
+                    <img src="img/fentech_full_logo.png" alt="Facilitator 1">
+                    <h3>Jane Doe</h3>
+                    <p>Software Engineer</p>
+                </div>
+                <div class="facilitator">
+                    <img src="img/fentech_full_logo.png" alt="Facilitator 2">
+                    <h3>John Smith</h3>
+                    <p>Data Scientist</p>
+                </div>
+                <div class="facilitator">
+                    <img src="img/fentech_full_logo.png" alt="Facilitator 3">
+                    <h3>Emily Johnson</h3>
+                    <p>UX Designer</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="staff">
+            <h2 class="main-heading">Our Staff</h2>
+            <div class="staff-grid">
+                <div class="staff-member">
+                    <img src="img/fentech_full_logo.png" alt="Staff Member 1">
+                    <h3>Michael Brown</h3>
+                    <p>Executive Director</p>
+                </div>
+                <div class="staff-member">
+                    <img src="img/fentech_full_logo.png" alt="Staff Member 2">
+                    <h3>Sarah Wilson</h3>
+                    <p>Program Coordinator</p>
+                </div>
+                <div class="staff-member">
+                    <img src="img/fentech_full_logo.png" alt="Staff Member 3">
+                    <h3>David Lee</h3>
+                    <p>Marketing Manager</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section id="programs">
+        <h2 class="main-heading">Our Programs</h2>
+        <div class="program-grid">
+            <div class="program-card">
+                <img src="img/fentech_full_logo.png" alt="Program 1">
+                <h3>Web Development</h3>
+                <p>Learn to build modern and responsive websites using HTML, CSS, and JavaScript.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="program-card">
+                <img src="img/fentech_full_logo.png" alt="Program 2">
+                <h3>Mobile App Development</h3>
+                <p>Dive into the world of mobile app development and create innovative apps for Android and iOS.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="program-card">
+                <img src="img/fentech_full_logo.png" alt="Program 3">
+                <h3>Data Science</h3>
+                <p>Explore the fascinating field of data science and learn techniques for data analysis and visualization.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="main-heading">Get in Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, City, State</p>
+                <p><i class="fas fa-envelope"></i> info@fentech.com</p>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                <p><i class="fas fa-brands fa-whatsapp"></i><a href=""> </a></p>
+                <p><i class="fas fa-brands fa-facebook"></i><a href=""> </a></p>
+                <p><i class="fas fa-brands fa-instagram"></i><a href=""> </a></p>
+                <p><i class="fas fa-brands fa-x-twitter"></i><a href=""> </a></p>
+                <p><i class="fas fa-brands fa-tiktok"></i><a href=""> </a></p>
+                <p><i class="fas  fa-brands fa-youtube"></i><a href=""> </a></p>
+            </div>
+            <form id="contact-form">
+                <h3>Send Us a Message</h3>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 FENTECH. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
